@@ -23,14 +23,15 @@ function initializePage() {
 	$("a.thumbnail").click(projectClick)
 }
 
-function updateProject(e) {
-	var projectID = $('#project').val();
-	$(projectID).animate({
-		width: $('#width').val()
-	})
 
-	var newText = $('#description').var();
-	$(projectID + ".project-description").text(newText);
+function updateProject(e) {
+   var projectID = $('#project').val();
+   $(projectID).animate({
+      width: $('#width').val()
+   });
+
+   var newText = $('#description').val();
+   $(projectID + " .project-description").text(newText);
 }
 
 function projectClick(e) {
