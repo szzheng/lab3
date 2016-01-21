@@ -23,8 +23,8 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
+			<h1>Steven Zheng</h1>
+			<p>Computer Science, UCSD 2014-2018 &middot; iOS programming &middot; board game enthusiast</p>
 			<button id="testjs" class="btn btn-primary btn-lg">Test Javascript</button>
 		</div>
 
@@ -36,54 +36,54 @@
 		<div class="project" id="project1">
 			<a href="" class="thumbnail">
 				<img src="images/lorempixel.people.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Waiting in Line</p>
+				<p>Photo cropping app</p>
 			</a>
 		</div>
 		<div class="project" id="project2">
 			<a href="#" class="thumbnail">
 				<img src="images/lorempixel.city.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Needfinding</p>
+				<p>Family locator app</p>
 			</a>
 		</div>
 		<div class="project" id="project3">
 			<a href="#" class="thumbnail">
 				<img src="images/lorempixel.technics.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Prototyping</p>
+				<p>Task management app</p>
 			</a>
 		</div>
 		<div class="project" id="project4">
 			<a href="#" class="thumbnail">
 				<img src="images/lorempixel.abstract.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Heuristic Evaluation</p>
-			</a>
-		</div>
-		<div class="project" id="project5">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.abstract.8.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Visualization</p>
-			</a>
-		</div>
-		<div class="project" id="project6">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.people.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Social design</p>
-			</a>
-		</div>
-		<div class="project" id="project7">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.technics.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Gestural interaction</p>
-			</a>
-		</div>
-		<div class="project" id="project8">
-			<a href="#" class="thumbnail">
-				<img src="images/lorempixel.city.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Design tools</p>
+				<p>Avalon (The Resistance) Chrome extension</p>
 			</a>
 		</div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/introHCI.js"></script>
+
+	<form id="projectForm" role="form">
+    <div class="form-group">
+      <label for="project">Please change the project:</label>
+      <select class="form-control" id="project">
+        <option value="#project1">Photo cropping app</option>
+        <option value="#project2">Family locator app</option>
+        <option value="#project3">Task management app</option>
+        <option value="#project4">Avalon (The Resistance) Chrome extension</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="width">To width (in pixels):</label>
+      <input type="number" class="form-control" id="width" placeholder="Width">
+    </div>
+    <div class="form-group">
+      <label for="description">And to description:</label>
+      <input type="text" class="form-control" id="description" placeholder="Project desicription">
+    </div>
+    <button id="submitBtn" type="button" class="btn btn-default">Submit</button>
+  </form>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
 </body>
 </html>
